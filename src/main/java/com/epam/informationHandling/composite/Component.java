@@ -6,4 +6,6 @@ public interface Component {
     void addComponent(Component component);
 
     List<Component> getChildren();
+
+    void setChildren(List<Component> children);
 }

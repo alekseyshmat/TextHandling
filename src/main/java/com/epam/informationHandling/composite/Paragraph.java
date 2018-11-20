@@ -8,9 +8,8 @@ public class Paragraph implements Component, Value {
     private String value;
     private boolean expression;
 
-    public Paragraph(String value, boolean expression) {
+    public Paragraph(String value) {
         this.value = value;
-        this.expression = expression;
         sentences = new ArrayList<>();
     }
 
@@ -22,6 +21,11 @@ public class Paragraph implements Component, Value {
     @Override
     public List<Component> getChildren() {
         return sentences;
+    }
+
+    @Override
+    public void setChildren(List<Component> sentences) {
+        this.sentences = sentences;
     }
 
     @Override

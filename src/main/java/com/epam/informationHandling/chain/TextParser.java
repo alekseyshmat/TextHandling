@@ -1,10 +1,12 @@
 package com.epam.informationHandling.chain;
 
-import com.epam.informationHandling.composite.Component;
+import java.util.List;
 
 public class TextParser implements Parser {
-    @Override
-    public void parse(Component component, String inputData) {
 
+
+    @Override
+    public List parse(String text) {
+        return null;
     }
 }

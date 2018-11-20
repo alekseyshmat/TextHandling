@@ -8,9 +8,8 @@ public class Text implements Component, Value {
     private String value;
     private boolean expression;
 
-    public Text(String value, boolean expression) {
+    public Text(String value) {
         this.value = value;
-        this.expression = expression;
         paragraphs = new ArrayList<>();
     }
 
@@ -22,6 +21,11 @@ public class Text implements Component, Value {
     @Override
     public List<Component> getChildren() {
         return paragraphs;
+    }
+
+    @Override
+    public void setChildren(List<Component> children) {
+        paragraphs = children;
     }
 
     @Override

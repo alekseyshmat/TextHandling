@@ -8,18 +8,10 @@ public class Lexeme implements Component, Value {
     private String value;
     private boolean expression;
 
-    public Lexeme(String value, boolean expression) {
+    public Lexeme(String value) {
         this.value = value;
         this.expression = expression;
         words = new ArrayList<>();
-    }
-
-    public Lexeme word(String value) {
-        return new Lexeme(value, false);
-    }
-
-    public Lexeme expression(String value) {
-        return new Lexeme(value, false);
     }
 
     @Override
@@ -30,6 +22,11 @@ public class Lexeme implements Component, Value {
     @Override
     public List<Component> getChildren() {
         throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void setChildren(List<Component> children) {
+        words = children;
     }
 
     @Override

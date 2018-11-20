@@ -8,7 +8,7 @@ public class Sentence implements Component, Value {
     private String value;
     private boolean expression;
 
-    public Sentence(String value, boolean expression) {
+    public Sentence(String value) {
         this.value = value;
         this.expression = expression;
         lexemes = new ArrayList<>();
@@ -22,6 +22,11 @@ public class Sentence implements Component, Value {
     @Override
     public List<Component> getChildren() {
         return lexemes;
+    }
+
+    @Override
+    public void setChildren(List<Component> children) {
+        lexemes = children;
     }
 
     @Override

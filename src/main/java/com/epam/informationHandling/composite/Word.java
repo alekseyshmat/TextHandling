@@ -25,6 +25,11 @@ public class Word implements Component, Value {
     }
 
     @Override
+    public void setChildren(List<Component> children) {
+
+    }
+
+    @Override
     public String getValue() {
         return value;
     }

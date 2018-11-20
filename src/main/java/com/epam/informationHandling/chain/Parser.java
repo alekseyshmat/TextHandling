@@ -2,7 +2,9 @@ package com.epam.informationHandling.chain;
 
 import com.epam.informationHandling.composite.Component;
 
-public interface Parser {
+import java.util.List;
+
+public interface Parser<T extends Component>  {
     //    void parse(Component component, String inputData);
-//    List<T> parse(String text);
+    List<T> parse(String text);
 }

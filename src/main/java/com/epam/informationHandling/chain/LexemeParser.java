@@ -8,6 +8,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class LexemeParser implements Parser<Lexeme> {
+
     private Parser wordParser;
     private static final String LEXEME_REGEXP = "\\s";
 

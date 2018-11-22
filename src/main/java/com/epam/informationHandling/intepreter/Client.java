@@ -9,13 +9,12 @@ import java.util.Scanner;
 public class Client {
     private List<AbstractMathExpression> listExpressions;
 
-    public Client(String expression) {
+    public Client() {
         listExpressions = new ArrayList<>();
-        parse(expression);
     }
 
     private void parse(String expression) {
-        for (String lexeme : expression.split("\\p{Blank}+")) {
+        for (String lexeme : expression.split("")) {
             if (lexeme.isEmpty()) {
                 continue;
             }
@@ -43,7 +42,8 @@ public class Client {
         }
     }
 
-    public Number calculate() {
+    public Number calculate(String expression) {
+        parse(expression);
         Context context = new Context();
         for (AbstractMathExpression terminal : listExpressions) {
             terminal.interpret(context);

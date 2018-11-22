@@ -7,5 +7,5 @@ public interface Component {
 
     List<Component> getChildren();
 
-    void setChildren(List<Component> children);
+
 }

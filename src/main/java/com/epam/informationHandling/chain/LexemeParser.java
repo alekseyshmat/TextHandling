@@ -1,33 +1,38 @@
 package com.epam.informationHandling.chain;
 
+import com.epam.informationHandling.composite.Component;
+import com.epam.informationHandling.composite.Composite;
 import com.epam.informationHandling.composite.Lexeme;
+import com.epam.informationHandling.intepreter.Client;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class LexemeParser implements Parser<Lexeme> {
+public class LexemeParser implements Parser {
 
-    private Parser wordParser;
+    private static final String WORD_REGEXP = "[A-Za-z]+";
     private static final String LEXEME_REGEXP = "\\s";
+    private static final String EXPRESSION_REGEXP = "(--)|(\\+\\+)|(\\d)|([+*/])";
 
     public LexemeParser() {
-        wordParser = new WordParser();
     }
 
     @Override
-    public List<Lexeme> parse(String text) {
-        List<Lexeme> result = new ArrayList<>();
-        Pattern paragraphPattern = Pattern.compile(LEXEME_REGEXP);
-        Matcher matcher = paragraphPattern.matcher(text);
+    public void parse(Component component, String inputData) {
+        Pattern expressionPattern = Pattern.compile(EXPRESSION_REGEXP);
+        Matcher expressionMatcher = expressionPattern.matcher(inputData);
+        Pattern wordPattern = Pattern.compile(WORD_REGEXP);
+        Matcher wordMatcher = wordPattern.matcher(inputData);
 
-        while (matcher.find()) {
-            String value = matcher.group();
-            Lexeme lexeme = new Lexeme(value);
-            result.add(lexeme);
+        if (expressionMatcher.find()) {
+            //count expression
+            Client client = new Client();
+            String expression = client.calculate(inputData);
+            Component lexeme = new Lexeme(expression, true);
+            component.addComponent(lexeme);
+        } else if (wordMatcher.find()){
+            Component word = new Composite();
+            component.addComponent(word);
         }
-
-        return result;
     }
-}//todo
+}

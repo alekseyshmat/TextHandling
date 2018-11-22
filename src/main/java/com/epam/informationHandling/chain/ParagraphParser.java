@@ -1,45 +1,30 @@
 package com.epam.informationHandling.chain;
 
-import com.epam.informationHandling.composite.Paragraph;
+import com.epam.informationHandling.composite.Component;
+import com.epam.informationHandling.composite.Composite;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ParagraphParser implements Parser<Paragraph> {
+public class ParagraphParser implements Parser {
 
     private Parser sentenceParser;
-    private final String PARAGRAPH_REGEXP = "(\\t|\\s{4}).+\\s|\\n";
+    private static final String PARAGRAPH_REGEXP = "\\t|\\s{4}";
 
-    public ParagraphParser() {
-        sentenceParser = new SentenceParser();
+    public ParagraphParser(Parser sentenceParser) {
+        this.sentenceParser = sentenceParser;
     }
 
     @Override
-    public List<Paragraph> parse(String text) {
-        List<Paragraph> result = new ArrayList<>();
+    public void parse(Component component, String inputData) {
         Pattern paragraphPattern = Pattern.compile(PARAGRAPH_REGEXP);
-        Matcher matcher = paragraphPattern.matcher(text);
-
+        Matcher matcher = paragraphPattern.matcher(inputData);
         while (matcher.find()) {
             String value = matcher.group();
-            Paragraph paragraph = new Paragraph(value);
-            result.add(paragraph);
+            Component paragraph = new Composite();
+            component.addComponent(paragraph);
+            sentenceParser.parse(paragraph, value);
         }
-
-        return result;
-    }
-
-    public List<Paragraph> parseAll(String text) {
-        List<Paragraph> result = parse(text);
-        Parser parser = sentenceParser;
-
-        for (Paragraph paragraph : result) {
-            paragraph.setChildren(parser.parse(paragraph.getValue()));
-        }
-
-        return result;
     }
 
 }//todo

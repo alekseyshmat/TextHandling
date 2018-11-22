@@ -7,5 +7,4 @@ public interface Component {
 
     List<Component> getChildren();
 
-
 }

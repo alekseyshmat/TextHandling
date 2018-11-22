@@ -42,12 +42,13 @@ public class Client {
         }
     }
 
-    public Number calculate(String expression) {
+    public String calculate(String expression) {
         parse(expression);
         Context context = new Context();
         for (AbstractMathExpression terminal : listExpressions) {
             terminal.interpret(context);
         }
-        return context.popValue();
+        String result = String.valueOf(context.popValue());
+        return result;
     }
 }

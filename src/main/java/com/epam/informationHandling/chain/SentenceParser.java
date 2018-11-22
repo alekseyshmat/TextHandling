@@ -1,32 +1,29 @@
 package com.epam.informationHandling.chain;
 
-import com.epam.informationHandling.composite.Sentence;
+import com.epam.informationHandling.composite.Component;
+import com.epam.informationHandling.composite.Composite;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class SentenceParser implements Parser<Sentence> {
-    private final String SENTENSE_REGEXP = "[A-Z].+([!]|[?]|[.]|[...])";
+public class SentenceParser implements Parser {
+    private static final String SENTENSE_REGEXP = "[A-Z].+([!]|[?]|[.]|[...])";
     private Parser lexemeParser;
 
-    public SentenceParser() {
-        lexemeParser = new LexemeParser();
+    public SentenceParser(Parser lexemeParser) {
+        this.lexemeParser = lexemeParser;
     }
 
 
     @Override
-    public List<Sentence> parse(String text) {
-        List<Sentence> result = new ArrayList<>();
+    public void parse(Component component, String inputData) {
         Pattern sentencePattern = Pattern.compile(SENTENSE_REGEXP);
-        Matcher matcher = sentencePattern.matcher(text);
+        Matcher matcher = sentencePattern.matcher(inputData);
         while (matcher.find()) {
             String value = matcher.group();
-            Sentence sentence = new Sentence(value);
-            result.add(sentence);
+            Component sentence = new Composite();
+            component.addComponent(sentence);
+            lexemeParser.parse(component, value);
         }
-
-        return result;
     }
 }//todo

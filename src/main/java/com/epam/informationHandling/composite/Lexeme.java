@@ -6,8 +6,9 @@ public class Lexeme implements Component, Value {
     private String value;
     private boolean expression;
 
-    public Lexeme(String value) {
+    public Lexeme(String value, boolean expression) {
         this.value = value;
+        this.expression = expression;
     }
 
 
@@ -18,11 +19,19 @@ public class Lexeme implements Component, Value {
 
     @Override
     public void addComponent(Component component) {
-
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public List<Component> getChildren() {
-        return null;
+        throw new UnsupportedOperationException();
+    }
+
+    public boolean isExpression() {
+        return expression;
+    }
+
+    public void setExpression(boolean expression) {
+        this.expression = expression;
     }
 }

@@ -33,7 +33,7 @@ public class ClientTest {
 
     @Test(dataProvider = "dataForClientPositiveTest")
     public void calculateTest(String expression, Number expectedValue) {
-        Number actualValue = client.calculate(expression);
+        String actualValue = client.calculate(expression);
         Assert.assertEquals(actualValue, expectedValue);
     }
 }

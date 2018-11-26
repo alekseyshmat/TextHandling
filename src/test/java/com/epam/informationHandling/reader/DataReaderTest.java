@@ -10,10 +10,12 @@ public class DataReaderTest {
 
     private static final String PATH = "src/test/resources/testFile.txt";
     private DataReader dataReader;
+    private ScanReader scanReader;
 
     @BeforeClass
     public void setUp() {
         dataReader = new DataReader();
+        scanReader = new ScanReader();
     }
 
     @DataProvider(name = "dataForReadFilePositiveTest")
@@ -21,7 +23,7 @@ public class DataReaderTest {
         return new Object[][]{
                 {
                         "    My name Aleksey. I'm 19 years old.\n" +
-                                "    Today is thursday. 22.11.2018"
+                                "\tToday is thursday. 22.11.2018"
                 }
         };
     }
@@ -29,6 +31,7 @@ public class DataReaderTest {
     @Test(dataProvider = "dataForReadFilePositiveTest")
     public void readFilePositiveTest(String expectedString) throws ReadingFileException {
         String actual = dataReader.readFile(PATH);
+//        String actual = scanReader.readFile(PATH);
         Assert.assertEquals(actual, expectedString);
     }
 }

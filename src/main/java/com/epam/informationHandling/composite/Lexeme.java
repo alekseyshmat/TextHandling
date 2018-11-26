@@ -1,6 +1,7 @@
 package com.epam.informationHandling.composite;
 
 import java.util.List;
+import java.util.Random;
 
 public class Lexeme implements Component, Value {
     private String value;
@@ -11,6 +12,13 @@ public class Lexeme implements Component, Value {
         this.expression = expression;
     }
 
+    public static Lexeme word(String value, boolean expression) {
+        return new Lexeme(value, false);
+    }
+
+    public static Lexeme expression(String value, boolean expression) {
+        return new Lexeme(value, true);
+    }
 
     @Override
     public String getValue() {
@@ -27,11 +35,37 @@ public class Lexeme implements Component, Value {
         throw new UnsupportedOperationException();
     }
 
-    public boolean isExpression() {
-        return expression;
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+
+        if (obj == null || obj.getClass() != this.getClass()) {
+            return false;
+        }
+        Lexeme lexeme = (Lexeme) obj;
+        return lexeme.getValue().equals(this.getValue());
     }
 
-    public void setExpression(boolean expression) {
-        this.expression = expression;
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = new Random().nextInt(255);
+        result = prime * result + this.getValue().hashCode();
+
+        return result;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Lexeme{" +
+                "value = " + value +
+                "\n expression = " + expression + " }";
+    }
+
+    public boolean isExpression() {
+        return expression;
     }
 }

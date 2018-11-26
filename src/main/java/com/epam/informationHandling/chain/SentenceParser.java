@@ -7,23 +7,24 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class SentenceParser implements Parser {
-    private static final String SENTENSE_REGEXP = "[A-Z].+([!]|[?]|[.]|[...])";
+    private static final String SENTENCE_REGEXP = "[ a-zA-Z1-9,;:()*/+-]+([.]{3}|[.?!])";
     private Parser lexemeParser;
 
     public SentenceParser(Parser lexemeParser) {
         this.lexemeParser = lexemeParser;
     }
 
-
     @Override
-    public void parse(Component component, String inputData) {
-        Pattern sentencePattern = Pattern.compile(SENTENSE_REGEXP);
+    public Component parse(String inputData) {
+        Pattern sentencePattern = Pattern.compile(SENTENCE_REGEXP);
         Matcher matcher = sentencePattern.matcher(inputData);
+        Component sentence = new Composite();
+        Component lexeme;
         while (matcher.find()) {
             String value = matcher.group();
-            Component sentence = new Composite();
-            component.addComponent(sentence);
-            lexemeParser.parse(component, value);
+            lexeme = lexemeParser.parse(value);
+            sentence.addComponent(lexeme);
         }
+        return sentence;
     }
-}//todo
+}

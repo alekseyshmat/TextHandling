@@ -7,7 +7,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class SentenceParser implements Parser {
-    private static final String SENTENCE_REGEXP = "[ a-zA-Z1-9,;:()*/+-]+([.]{3}|[.?!])";
+    private static final String SENTENCE_REGEXP = "[ a-zA-Z1-9,;:()*/+-]+([.]{3}|[.?!])"; //TODO
     private Parser lexemeParser;
 
     public SentenceParser(Parser lexemeParser) {

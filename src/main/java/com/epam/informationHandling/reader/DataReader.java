@@ -8,6 +8,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.List;
 
 public class DataReader {
     private static final String MESSAGE_FOR_EXCEPTION = "File is not found";
@@ -16,29 +19,22 @@ public class DataReader {
     public DataReader() {
     }
 
-    public String readFile(String path) throws ReadingFileException {
+    public String readFile(Path path) throws ReadingFileException {
         StringBuilder dataFromFile = new StringBuilder();
-        BufferedReader bufferedReader = null;
-
+        List<String> text;
         try {
-            bufferedReader = new BufferedReader(new FileReader(new File(path)));
-            String tmp;
-            while ((tmp = bufferedReader.readLine()) != null) {
-                dataFromFile.append(tmp);
+            text = Files.readAllLines(path);
+            for (String current : text) {
+                if (dataFromFile.length() > 0) {
+                    dataFromFile.append(String.format(" %s", current));
+                } else {
+                    dataFromFile.append(String.format("%s", current));
+                }
             }
             LOGGER.info("File was read");
         } catch (IOException ex) {
-            LOGGER.error("File is not found");
+            LOGGER.error("File was not found");
             throw new ReadingFileException(MESSAGE_FOR_EXCEPTION, ex);
-        } finally {
-            if (bufferedReader != null) {
-                try {
-                    bufferedReader.close();
-                } catch (IOException e) {
-                    LOGGER.error("File is not closed");
-                    throw new ReadingFileException("File is not closed");
-                }
-            }
         }
         return dataFromFile.toString();
     }

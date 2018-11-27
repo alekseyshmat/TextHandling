@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eb70715-bad0-4390-8cad-3d350f4b7d7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/action/Operations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/reader/ScanReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/epam/informationHandling/composite/LexemeParserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/epam/informationHandling/composite/ParagraphParserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/epam/informationHandling/composite/SentenceParserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/LexemeParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/LexemeParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/ParagraphParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/ParagraphParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/ParserSuite.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/SentenceParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/SentenceParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/Composite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/Composite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/Lexeme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/Lexeme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/informationHandling/interpret/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/informationHandling/interpret/ClientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/reader/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/reader/DataReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/reader/ScanReader.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/informationHandling/reader/DataReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/informationHandling/reader/DataReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testFile.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,8 +23,8 @@
     <session id="-1748514422">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.32" value="1" />
@@ -40,22 +33,22 @@
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="17" />
           <entry key="gitignore" value="2" />
-          <entry key="java" value="7514" />
-          <entry key="txt" value="202" />
+          <entry key="java" value="7780" />
+          <entry key="txt" value="233" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7514" />
-          <entry key="PLAIN_TEXT" value="221" />
+          <entry key="JAVA" value="7780" />
+          <entry key="PLAIN_TEXT" value="252" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -63,16 +56,16 @@
         <counts>
           <entry key="class" value="10" />
           <entry key="gitignore" value="1" />
-          <entry key="java" value="178" />
-          <entry key="txt" value="3" />
+          <entry key="java" value="192" />
+          <entry key="txt" value="4" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="10" />
-          <entry key="JAVA" value="178" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="JAVA" value="192" />
+          <entry key="PLAIN_TEXT" value="5" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
@@ -81,99 +74,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/LexemeParser.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/reader/DataReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="425">
+              <caret line="35" column="47" lean-forward="true" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/Lexeme.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/informationHandling/reader/DataReaderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="64" column="49" selection-start-line="64" selection-start-column="49" selection-end-line="64" selection-end-column="49" />
+            <state relative-caret-position="235">
+              <caret line="42" column="57" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#398#399#0" expanded="true" />
-                <element signature="e#445#446#0" expanded="true" />
-                <element signature="e#518#519#0" expanded="true" />
-                <element signature="e#564#565#0" expanded="true" />
+                <element signature="e#511#512#0" expanded="true" />
+                <element signature="e#556#557#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/ParagraphParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/SentenceParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/Composite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="48" column="44" lean-forward="true" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#420#421#0" expanded="true" />
-                <element signature="e#466#467#0" expanded="true" />
-                <element signature="e#630#631#0" expanded="true" />
-                <element signature="e#671#672#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/informationHandling/composite/LexemeParserTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="22" column="68" lean-forward="true" selection-start-line="22" selection-start-column="68" selection-end-line="22" selection-end-column="68" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/informationHandling/interpret/ClientTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/Component.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -215,7 +132,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/intepreter/terminalExpression/TerminalExpressionPlus.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/intepreter/expression/TerminalExpressionPlus.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/exception/ReadingFileException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/reader/DataReader.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/informationHandling/chain/ParagraphParserTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testFIle.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
@@ -227,21 +143,22 @@
         <option value="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/ComponentType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/action/Operations.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/informationHandling/composite/ParserSuiteTest.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/testFile.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/reader/ScanReader.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/epam/informationHandling/reader/DataReaderTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/Parser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/ParserSuite.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/informationHandling/composite/SentenceParserTese.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/informationHandling/composite/SentenceParserTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/SentenceParser.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/informationHandling/composite/ParagraphParserTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/Component.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/informationHandling/composite/LexemeParserTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/LexemeParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/ParagraphParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/Composite.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/Lexeme.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/Composite.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/Parser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/SentenceParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/ParagraphParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/informationHandling/reader/DataReader.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/testFile.txt" />
+        <option value="$PROJECT_DIR$/src/test/java/com/epam/informationHandling/reader/DataReaderTest.java" />
       </list>
     </option>
   </component>
@@ -252,7 +169,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="775" />
   </component>
@@ -284,6 +201,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -339,6 +258,15 @@
               <item name="informationHandling" type="b2602c69:ProjectViewProjectNode" />
               <item name="informationHandling" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="informationHandling" type="462c0819:PsiDirectoryNode" />
+              <item name="reader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="informationHandling" type="b2602c69:ProjectViewProjectNode" />
+              <item name="informationHandling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -365,19 +293,42 @@
               <item name="informationHandling" type="462c0819:PsiDirectoryNode" />
               <item name="composite" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="informationHandling" type="b2602c69:ProjectViewProjectNode" />
+              <item name="informationHandling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="informationHandling" type="462c0819:PsiDirectoryNode" />
+              <item name="interpret" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="informationHandling" type="b2602c69:ProjectViewProjectNode" />
+              <item name="informationHandling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="informationHandling" type="462c0819:PsiDirectoryNode" />
+              <item name="reader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="informationHandling" type="b2602c69:ProjectViewProjectNode" />
+              <item name="informationHandling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543238413505" />
-    <property name="last_opened_file_path" value="F:/Загрузки/Epam_InformationHandlingTask-master/Epam_InformationHandlingTask-master" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543312864167" />
+    <property name="last_opened_file_path" value="F:/Загрузки/LS/InformationHandling-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -397,7 +348,41 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.LexemeParserTest.parsePositiveTest">
+  <component name="RunManager" selected="TestNG.DataReaderTest">
+    <configuration name="DataReaderTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="informationHandling" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epam.informationHandling.reader.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.epam.informationHandling.reader" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.informationHandling.reader.DataReaderTest" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataReaderTest.readFileNegativeTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="informationHandling" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epam.informationHandling.reader.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.epam.informationHandling.reader" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.informationHandling.reader.DataReaderTest" />
+      <option name="METHOD_NAME" value="readFileNegativeTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DataReaderTest.readFilePositiveTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="informationHandling" />
       <extension name="coverage">
@@ -452,56 +437,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParserSuiteTest.parsePositiveTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="informationHandling" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.epam.informationHandling.composite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.epam.informationHandling.composite" />
-      <option name="MAIN_CLASS_NAME" value="com.epam.informationHandling.composite.ParserSuiteTest" />
-      <option name="METHOD_NAME" value="parsePositiveTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SentenceParserTest.parsePositiveTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="informationHandling" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.epam.informationHandling.composite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.epam.informationHandling.composite" />
-      <option name="MAIN_CLASS_NAME" value="com.epam.informationHandling.composite.SentenceParserTest" />
-      <option name="METHOD_NAME" value="parsePositiveTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="TestNG.DataReaderTest.readFilePositiveTest" />
-      <item itemvalue="TestNG.ParserSuiteTest.parsePositiveTest" />
-      <item itemvalue="TestNG.SentenceParserTest.parsePositiveTest" />
       <item itemvalue="TestNG.ParagraphParserTest.parsePositiveTest" />
       <item itemvalue="TestNG.LexemeParserTest.parsePositiveTest" />
+      <item itemvalue="TestNG.DataReaderTest.readFileNegativeTest" />
+      <item itemvalue="TestNG.DataReaderTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.DataReaderTest" />
+        <item itemvalue="TestNG.DataReaderTest.readFileNegativeTest" />
+        <item itemvalue="TestNG.DataReaderTest.readFilePositiveTest" />
         <item itemvalue="TestNG.LexemeParserTest.parsePositiveTest" />
         <item itemvalue="TestNG.ParagraphParserTest.parsePositiveTest" />
-        <item itemvalue="TestNG.SentenceParserTest.parsePositiveTest" />
-        <item itemvalue="TestNG.ParserSuiteTest.parsePositiveTest" />
-        <item itemvalue="TestNG.DataReaderTest.readFilePositiveTest" />
       </list>
     </recent_temporary>
   </component>
@@ -525,7 +474,8 @@
       <workItem from="1542989674344" duration="84000" />
       <workItem from="1543148644411" duration="4264000" />
       <workItem from="1543205233876" duration="5707000" />
-      <workItem from="1543219635185" duration="4309000" />
+      <workItem from="1543219635185" duration="5427000" />
+      <workItem from="1543310452127" duration="2359000" />
     </task>
     <task id="LOCAL-00001" summary="added composite and chain">
       <created>1542749826386</created>
@@ -562,43 +512,50 @@
       <option name="project" value="LOCAL" />
       <updated>1542916174540</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixed parsers and added test">
+      <created>1543238498530</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1543238498530</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SentenceParserTest_parsePositiveTest - 2018.11.26 at 11h 24m 12s.xml">
-      <configuration name="SentenceParserTest.parsePositiveTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SentenceParserTest_parsePositiveTest - 2018.11.26 at 11h 25m 15s.xml">
-      <configuration name="SentenceParserTest.parsePositiveTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SentenceParserTest_parsePositiveTest - 2018.11.26 at 11h 30m 11s.xml">
-      <configuration name="SentenceParserTest.parsePositiveTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SentenceParserTest_parsePositiveTest - 2018.11.26 at 11h 34m 56s.xml">
-      <configuration name="SentenceParserTest.parsePositiveTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ParagraphParserTest_parsePositiveTest - 2018.11.26 at 15h 45m 31s.xml">
-      <configuration name="ParagraphParserTest.parsePositiveTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LexemeParserTest_parsePositiveTest - 2018.11.26 at 16h 01m 37s.xml">
+    <history-entry file="LexemeParserTest_parsePositiveTest - 2018.11.26 at 16h 17m 54s.xml">
       <configuration name="LexemeParserTest.parsePositiveTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LexemeParserTest_parsePositiveTest - 2018.11.26 at 16h 06m 56s.xml">
+    <history-entry file="LexemeParserTest_parsePositiveTest - 2018.11.26 at 16h 18m 31s.xml">
       <configuration name="LexemeParserTest.parsePositiveTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LexemeParserTest_parsePositiveTest - 2018.11.26 at 16h 13m 10s.xml">
+    <history-entry file="LexemeParserTest_parsePositiveTest - 2018.11.26 at 16h 20m 20s.xml">
       <configuration name="LexemeParserTest.parsePositiveTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LexemeParserTest_parsePositiveTest - 2018.11.26 at 16h 13m 52s.xml">
-      <configuration name="LexemeParserTest.parsePositiveTest" configurationId="TestNG" />
+    <history-entry file="DataReaderTest_readFilePositiveTest - 2018.11.27 at 12h 38m 15s.xml">
+      <configuration name="DataReaderTest.readFilePositiveTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LexemeParserTest_parsePositiveTest - 2018.11.26 at 16h 14m 15s.xml">
-      <configuration name="LexemeParserTest.parsePositiveTest" configurationId="TestNG" />
+    <history-entry file="DataReaderTest_readFilePositiveTest - 2018.11.27 at 12h 43m 14s.xml">
+      <configuration name="DataReaderTest.readFilePositiveTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DataReaderTest_readFilePositiveTest - 2018.11.27 at 12h 43m 45s.xml">
+      <configuration name="DataReaderTest.readFilePositiveTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DataReaderTest_readFilePositiveTest - 2018.11.27 at 12h 44m 42s.xml">
+      <configuration name="DataReaderTest.readFilePositiveTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DataReaderTest_readFilePositiveTest - 2018.11.27 at 12h 46m 21s.xml">
+      <configuration name="DataReaderTest.readFilePositiveTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DataReaderTest_readFilePositiveTest - 2018.11.27 at 12h 53m 02s.xml">
+      <configuration name="DataReaderTest.readFilePositiveTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DataReaderTest_readFileNegativeTest - 2018.11.27 at 13h 00m 13s.xml">
+      <configuration name="DataReaderTest.readFileNegativeTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58641000" />
+    <option name="totallyTimeSpent" value="62118000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -613,7 +570,7 @@
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.295764" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2806354" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -622,7 +579,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32738096" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29315478" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42708334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38690478" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -685,7 +642,8 @@
     <MESSAGE value="added added interpret" />
     <MESSAGE value="added added interpret Test&#10;added logger" />
     <MESSAGE value="fixed parsers" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed parsers" />
+    <MESSAGE value="fixed parsers and added test" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed parsers and added test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -710,13 +668,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/Paragraph.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/Sentence.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/Word.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/Value.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/intepreter/expression/TerminalExpressionDivide.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -803,13 +754,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/TextParser.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/WordParser.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/ComponentType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/ComponentType.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/action/Operations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -821,41 +766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/reader/DataReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="37" column="55" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/reader/ScanReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testFile.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/informationHandling/reader/DataReaderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -886,13 +796,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/informationHandling/composite/ParserSuiteTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/informationHandling/composite/ParserSuiteTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/Component.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -900,13 +804,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/ParserSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/ParserSuite.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/informationHandling/interpret/ClientTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
@@ -931,29 +829,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/SentenceParser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/Composite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="229">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/SentenceParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="9" column="96" selection-start-line="9" selection-start-column="96" selection-end-line="9" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/Value.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/ParagraphParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <caret line="11" column="114" selection-start-line="11" selection-start-column="114" selection-end-line="11" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testFile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/reader/ScanReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/Lexeme.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="37" selection-start-line="37" selection-end-line="38" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/chain/LexemeParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
+        <state relative-caret-position="303">
           <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -961,30 +905,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/Composite.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/reader/DataReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="48" column="44" lean-forward="true" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#630#631#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="425">
+          <caret line="35" column="47" lean-forward="true" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/informationHandling/composite/Lexeme.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/informationHandling/reader/DataReaderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="64" column="49" selection-start-line="64" selection-start-column="49" selection-end-line="64" selection-end-column="49" />
+        <state relative-caret-position="235">
+          <caret line="42" column="57" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -15,12 +15,12 @@ public class ExpressionAction {
             Lexeme lexeme = ((Lexeme) lexemes);
             if (lexeme.isExpression()) {
                 String value = lexeme.getValue();
-                Client client = new Client();
-                String result = client.calculate(value);
-                newComponent.addComponent(Lexeme.word(result, false));
+                MathOperations mathOperations = new MathOperations();
+                String result = mathOperations.calculate(value);
+                newComponent.addComponent(Lexeme.word(result));
             } else {
                 String value = lexeme.getValue();
-                newComponent.addComponent(Lexeme.word(value, false));
+                newComponent.addComponent(Lexeme.word(value));
             }
         }
         return newComponent;

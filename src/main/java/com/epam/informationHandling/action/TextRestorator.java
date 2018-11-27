@@ -2,10 +2,13 @@ package com.epam.informationHandling.action;
 
 import com.epam.informationHandling.composite.Component;
 import com.epam.informationHandling.composite.Lexeme;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.List;
 
 public class TextRestorator {
+    private static final Logger LOGGER = LogManager.getLogger(TextRestorator.class);
 
     public String restore(Component component) {
         StringBuilder text = new StringBuilder();
@@ -23,7 +26,8 @@ public class TextRestorator {
                     Lexeme lex = ((Lexeme) lexeme);
                     String value = lex.getValue();
                     text.append(value);
-                    if ((numberLexemes-- != 1 && numberSentences >= 1) || (numberLexemes-- == 0 && numberSentences != 1)) {
+                    if ((numberLexemes-- != 1 && numberSentences >= 1) ||
+                            (numberLexemes-- == 0 && numberSentences != 1)) {
                         text.append(" ");
                     }
                 }
@@ -33,6 +37,7 @@ public class TextRestorator {
                 text.append("\n");
             }
         }
+        LOGGER.info("Text from input component waw restored");
         return text.toString();
     }
 }

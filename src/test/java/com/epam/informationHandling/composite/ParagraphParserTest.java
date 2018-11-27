@@ -26,14 +26,14 @@ public class ParagraphParserTest {
         Component secondParagraph = new Composite();
 
         Component sentenceFirst = new Composite();
-        sentenceFirst.addComponent(Lexeme.word("One", false));
-        sentenceFirst.addComponent(Lexeme.word("two", false));
-        sentenceFirst.addComponent(Lexeme.word("three", false));
+        sentenceFirst.addComponent(Lexeme.word("One,"));
+        sentenceFirst.addComponent(Lexeme.word("two,"));
+        sentenceFirst.addComponent(Lexeme.word("three."));
 
         Component sentenceSecond = new Composite();
-        sentenceSecond.addComponent(Lexeme.word("Six", false));
-        sentenceSecond.addComponent(Lexeme.word("seven", false));
-        sentenceSecond.addComponent(Lexeme.word("nine", false));
+        sentenceSecond.addComponent(Lexeme.word("Six,"));
+        sentenceSecond.addComponent(Lexeme.word("seven,"));
+        sentenceSecond.addComponent(Lexeme.word("nine."));
 
         firstParagraph.addComponent(sentenceFirst);
         secondParagraph.addComponent(sentenceSecond);
@@ -42,7 +42,8 @@ public class ParagraphParserTest {
         EXPECTED_COMPONENT.addComponent(secondParagraph);
         return new Object[][]{
                 {
-                        "\t One, two, three.\tSix, seven, nine.",
+                        "\tOne, two, three." +
+                                "\n\tSix, seven, nine.",
                         EXPECTED_COMPONENT
                 }
         };

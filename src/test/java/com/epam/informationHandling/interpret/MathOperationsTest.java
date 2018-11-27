@@ -1,20 +1,20 @@
 package com.epam.informationHandling.interpret;
 
-import com.epam.informationHandling.intepreter.Client;
+import com.epam.informationHandling.intepreter.MathOperations;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class ClientTest {
+public class MathOperationsTest {
 
-    private Client client;
+    private MathOperations mathOperations;
     private static final String FIRST_EXPRESSION = "8274+*-";
     private static final String SECOND_EXPRESSION = "273+/";
 
     @BeforeClass
     public void setUp() {
-        client = new Client();
+        mathOperations = new MathOperations();
     }
 
     @DataProvider(name = "dataForClientPositiveTest")
@@ -33,7 +33,7 @@ public class ClientTest {
 
     @Test(dataProvider = "dataForClientPositiveTest")
     public void calculateTest(String expression, String expectedValue) {
-        String actualValue = client.calculate(expression);
+        String actualValue = mathOperations.calculate(expression);
         Assert.assertEquals(actualValue, expectedValue);
     }
 }

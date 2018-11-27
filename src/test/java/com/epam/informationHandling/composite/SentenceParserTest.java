@@ -22,13 +22,14 @@ public class SentenceParserTest {
     @DataProvider(name = "dataForParsePositiveTest")
     public Object[][] dataForParsePositiveTest() {
         Component lexeme = new Composite();
-        lexeme.addComponent(Lexeme.word("My", false));
-        lexeme.addComponent(Lexeme.word("name", false));
-        lexeme.addComponent(Lexeme.word("Aleksey", false));
+        lexeme.addComponent(Lexeme.word("My"));
+        lexeme.addComponent(Lexeme.word("name"));
+        lexeme.addComponent(Lexeme.word("is"));
+        lexeme.addComponent(Lexeme.word("Aleksey."));
         FIRST_COMPONENT.addComponent(lexeme);
         return new Object[][]{
                 {
-                        "My name Aleksey.",
+                        "My name is Aleksey.",
                         FIRST_COMPONENT
                 }
         };

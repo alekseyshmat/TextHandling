@@ -6,10 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Client {
+public class MathOperations {
     private List<AbstractMathExpression> listExpressions;
 
-    public Client() {
+    public MathOperations() {
         listExpressions = new ArrayList<>();
     }
 

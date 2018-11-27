@@ -8,8 +8,8 @@ import java.util.regex.Pattern;
 
 public class ParagraphParser implements Parser {
 
+    private static final String PARAGRAPH_REGEXP = "(\\t|\\s{4})['\"]?[ A-Za-z0-9,;:'\"&+*/\\-]+([.]{0,3}|!|[?])[\\s]?[\\n]?";
     private Parser sentenceParser;
-    private static final String PARAGRAPH_REGEXP = "([\t]|[ ]{4})[ a-zA-Z1-9,.?!;:()*/+-]+([.?!]|[.]{3})[\n]?"; //TODO
 
     public ParagraphParser(Parser sentenceParser) {
         this.sentenceParser = sentenceParser;

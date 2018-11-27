@@ -10,15 +10,15 @@ import org.testng.annotations.Test;
 
 public class TextRestoratorTest {
 
-    private static final Lexeme ONE = Lexeme.word("One,", false);
-    private static final Lexeme THREE = Lexeme.word("three,", false);
-    private static final Lexeme FOUR = Lexeme.word("four.", false);
-    private static final Lexeme FIVE = Lexeme.word("Five,", false);
-    private static final Lexeme SIX = Lexeme.word("Six,", false);
-    private static final Lexeme SEVEN = Lexeme.word("seven.", false);
-    private static final Lexeme TEN = Lexeme.word("ten,", false);
-    private static final Lexeme ELEVEN = Lexeme.word("eleven,", false);
-    private static final Lexeme EIGHTEEN = Lexeme.word("eighteen.", false);
+    private static final Lexeme ONE = Lexeme.word("One,");
+    private static final Lexeme THREE = Lexeme.word("three,");
+    private static final Lexeme FOUR = Lexeme.word("four.");
+    private static final Lexeme FIVE = Lexeme.word("Five,");
+    private static final Lexeme SIX = Lexeme.word("Six,");
+    private static final Lexeme SEVEN = Lexeme.word("seven.");
+    private static final Lexeme TEN = Lexeme.word("ten,");
+    private static final Lexeme ELEVEN = Lexeme.word("eleven,");
+    private static final Lexeme EIGHTEEN = Lexeme.word("eighteen.");
 
     private TextRestorator textRestorator;
 

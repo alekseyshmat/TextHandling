@@ -21,16 +21,16 @@ public class ExpressionActionTest {
     @DataProvider(name = "dataForExpressionPositiveTest")
     public Object[][] dataForExpressionPositiveTest() {
         Component inputComponent = new Composite();
-        inputComponent.addComponent(Lexeme.word("Counting", false));
-        inputComponent.addComponent(Lexeme.word("this", false));
-        inputComponent.addComponent(Lexeme.word("expression", false));
-        inputComponent.addComponent(Lexeme.expression("8274+*-", true));
+        inputComponent.addComponent(Lexeme.word("Counting"));
+        inputComponent.addComponent(Lexeme.word("this"));
+        inputComponent.addComponent(Lexeme.word("expression"));
+        inputComponent.addComponent(Lexeme.expression("8274+*-"));
 
         Component expectedComponent = new Composite();
-        expectedComponent.addComponent(Lexeme.word("Counting", false));
-        expectedComponent.addComponent(Lexeme.word("this", false));
-        expectedComponent.addComponent(Lexeme.word("expression", false));
-        expectedComponent.addComponent(Lexeme.word("14", false));
+        expectedComponent.addComponent(Lexeme.word("Counting"));
+        expectedComponent.addComponent(Lexeme.word("this"));
+        expectedComponent.addComponent(Lexeme.word("expression"));
+        expectedComponent.addComponent(Lexeme.word("14"));
         return new Object[][]{
                 {
                         inputComponent,

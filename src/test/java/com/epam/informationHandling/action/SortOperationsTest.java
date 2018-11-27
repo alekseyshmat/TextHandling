@@ -10,15 +10,15 @@ import org.testng.annotations.Test;
 
 public class SortOperationsTest {
 
-    private static final Lexeme ONE = Lexeme.word("one", false);
-    private static final Lexeme THREE = Lexeme.word("three", false);
-    private static final Lexeme FOUR = Lexeme.word("four", false);
-    private static final Lexeme FIVE = Lexeme.word("five", false);
-    private static final Lexeme SIX = Lexeme.word("six", false);
-    private static final Lexeme SEVEN = Lexeme.word("seven", false);
-    private static final Lexeme TEN = Lexeme.word("ten", false);
-    private static final Lexeme ELEVEN = Lexeme.word("eleven", false);
-    private static final Lexeme EIGHTEEN = Lexeme.word("eighteen", false);
+    private static final Lexeme ONE = Lexeme.word("one");
+    private static final Lexeme THREE = Lexeme.word("three");
+    private static final Lexeme FOUR = Lexeme.word("four");
+    private static final Lexeme FIVE = Lexeme.word("five");
+    private static final Lexeme SIX = Lexeme.word("six");
+    private static final Lexeme SEVEN = Lexeme.word("seven");
+    private static final Lexeme TEN = Lexeme.word("ten");
+    private static final Lexeme ELEVEN = Lexeme.word("eleven");
+    private static final Lexeme EIGHTEEN = Lexeme.word("eighteen");
 
     private SortOperations sortOperations;
 
@@ -144,7 +144,7 @@ public class SortOperationsTest {
 
     @Test(dataProvider = "dataForSortWordByByLengthPositiveTest")
     public void sortWordByByLengthPositiveTest(Component inputComponent, Component expected) {
-        Component actual = sortOperations.sortWordByByLength(inputComponent);
+        Component actual = sortOperations.sortWordByLength(inputComponent);
         Assert.assertEquals(actual, expected);
     }
 

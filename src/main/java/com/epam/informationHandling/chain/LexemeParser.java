@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 public class LexemeParser implements Parser {
 
-    private static final String WORD_REGEXP = "[a-zA-Z]+(,\\.[.]{0,3}|!|[?])?";
+    private static final String WORD_REGEXP = "['\"]?[A-Za-z]+[,!?:;&'\"]?([.]{0,3})?";
     private static final String EXPRESSION_REGEXP = "(\\d)+([+*/-]+)";
 
     public LexemeParser() {
@@ -22,19 +22,19 @@ public class LexemeParser implements Parser {
         Pattern wordPattern = Pattern.compile(WORD_REGEXP);
         Matcher wordMatcher = wordPattern.matcher(inputData);
 
-        Component lexemeC = new Composite();
-        Component lexeme;
-            while (wordMatcher.find()) {
-                String value = wordMatcher.group();
-                lexeme = Lexeme.word(value, false);
-                lexemeC.addComponent(lexeme);
-            }
+        Component lexeme = new Composite();
 
-            while (expressionMatcher.find()) {
-                String expression = expressionMatcher.group();
-                lexeme = Lexeme.expression(expression, true);
-                lexemeC.addComponent(lexeme);
-            }
-        return lexemeC;
+        while (wordMatcher.find()) {
+            String value = wordMatcher.group();
+            Component temp = Lexeme.word(value);
+            lexeme.addComponent(temp);
+        }
+
+        while (expressionMatcher.find()) {
+            String expression = expressionMatcher.group();
+            Component temp = Lexeme.expression(expression);
+            lexeme.addComponent(temp);
+        }
+        return lexeme;
     }
 }

@@ -12,11 +12,11 @@ public class Lexeme implements Component {
         this.expression = expression;
     }
 
-    public static Lexeme word(String value, boolean expression) {
+    public static Lexeme word(String value) {
         return new Lexeme(value, false);
     }
 
-    public static Lexeme expression(String value, boolean expression) {
+    public static Lexeme expression(String value) {
         return new Lexeme(value, true);
     }
 

@@ -24,7 +24,7 @@ public class DataReaderTest {
     public Object[][] dataForReadFilePositiveTest() {
         return new Object[][]{
                 {
-                        "    My name Aleksey. I'm 19 years old."
+                        "    My name is Aleksey. I'm 19 years old."
                 }
         };
     }

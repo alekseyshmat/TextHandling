@@ -19,8 +19,8 @@ public class LexemeParserTest {
 
     @DataProvider(name = "dataForParsePositiveTest")
     public Object[][] dataForParsePositiveTest() {
-        FIRST_EXPECTED_COMPONENT.addComponent(Lexeme.word("My", false));
-        SECOND_EXPECTED_COMPONENT.addComponent(Lexeme.expression("223*+", true));
+        FIRST_EXPECTED_COMPONENT.addComponent(Lexeme.word("My"));
+        SECOND_EXPECTED_COMPONENT.addComponent(Lexeme.expression("223*+"));
         return new Object[][]{
                 {
                         "My",

@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class OperationsTest {
+public class SortOperationsTest {
 
     private static final Lexeme ONE = Lexeme.word("one", false);
     private static final Lexeme THREE = Lexeme.word("three", false);
@@ -20,11 +20,11 @@ public class OperationsTest {
     private static final Lexeme ELEVEN = Lexeme.word("eleven", false);
     private static final Lexeme EIGHTEEN = Lexeme.word("eighteen", false);
 
-    private Operations operations;
+    private SortOperations sortOperations;
 
     @BeforeClass
     public void setUp() {
-        operations = new Operations();
+        sortOperations = new SortOperations();
     }
 
     @DataProvider(name = "dataForSortParagraphsByCountOfSentencePositiveTest")
@@ -138,19 +138,19 @@ public class OperationsTest {
 
     @Test(dataProvider = "dataForSortParagraphsByCountOfSentencePositiveTest")
     public void sortParagraphsByCountOfSentencePositiveTest(Component inputComponent, Component expected) {
-        Component actual = operations.sortParagraphsByCountOfSentence(inputComponent);
+        Component actual = sortOperations.sortParagraphsByCountOfSentence(inputComponent);
         Assert.assertEquals(actual, expected);
     }
 
     @Test(dataProvider = "dataForSortWordByByLengthPositiveTest")
     public void sortWordByByLengthPositiveTest(Component inputComponent, Component expected) {
-        Component actual = operations.sortWordByByLength(inputComponent);
+        Component actual = sortOperations.sortWordByByLength(inputComponent);
         Assert.assertEquals(actual, expected);
     }
 
     @Test(dataProvider = "dataForSortLexeme")
     public void sortLexeme(char symbol, Component inputComponent, Component expected) {
-        Component actual = operations.sortLexeme(symbol, inputComponent);
+        Component actual = sortOperations.sortLexeme(symbol, inputComponent);
         Assert.assertEquals(actual, expected);
     }
 }

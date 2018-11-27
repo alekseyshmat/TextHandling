@@ -5,7 +5,7 @@ import com.epam.informationHandling.composite.Component;
 import java.util.Comparator;
 import java.util.List;
 
-public class Operations {
+public class SortOperations {
 
     public Component sortParagraphsByCountOfSentence(Component component) {
         Component text = component;

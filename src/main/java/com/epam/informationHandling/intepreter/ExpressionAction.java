@@ -8,12 +8,9 @@ import java.util.List;
 
 public class ExpressionAction {
 
-    private Component newComponent;
-
     public Component calculateExpression(Component component) {
-        Component text = component;
-        List<Component> components = text.getChildren();
-        newComponent = new Composite();
+        List<Component> components = component.getChildren();
+        Component newComponent = new Composite();
         for (Component lexemes : components) {
             Lexeme lexeme = ((Lexeme) lexemes);
             if (lexeme.isExpression()) {

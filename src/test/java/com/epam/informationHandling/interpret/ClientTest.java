@@ -10,7 +10,7 @@ public class ClientTest {
 
     private Client client;
     private static final String FIRST_EXPRESSION = "8274+*-";
-    private static final String SECOND_EXPRESSION = "274+*";
+    private static final String SECOND_EXPRESSION = "273+/";
 
     @BeforeClass
     public void setUp() {
@@ -26,7 +26,7 @@ public class ClientTest {
                 },
                 {
                         SECOND_EXPRESSION,
-                        "22"
+                        "5"
                 }
         };
     }

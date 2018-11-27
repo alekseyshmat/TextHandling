@@ -22,17 +22,17 @@ public class ClientTest {
         return new Object[][]{
                 {
                         FIRST_EXPRESSION,
-                        14
+                        "14"
                 },
                 {
                         SECOND_EXPRESSION,
-                        22
+                        "22"
                 }
         };
     }
 
     @Test(dataProvider = "dataForClientPositiveTest")
-    public void calculateTest(String expression, Number expectedValue) {
+    public void calculateTest(String expression, String expectedValue) {
         String actualValue = client.calculate(expression);
         Assert.assertEquals(actualValue, expectedValue);
     }

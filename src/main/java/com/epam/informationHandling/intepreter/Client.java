@@ -48,7 +48,6 @@ public class Client {
         for (AbstractMathExpression terminal : listExpressions) {
             terminal.interpret(context);
         }
-        String result = String.valueOf(context.popValue());
-        return result;
+        return String.valueOf(context.popValue());
     }
 }

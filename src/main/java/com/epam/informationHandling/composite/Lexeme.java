@@ -3,7 +3,7 @@ package com.epam.informationHandling.composite;
 import java.util.List;
 import java.util.Random;
 
-public class Lexeme implements Component, Value {
+public class Lexeme implements Component {
     private String value;
     private boolean expression;
 

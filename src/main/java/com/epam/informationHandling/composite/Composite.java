@@ -22,6 +22,11 @@ public class Composite implements Component {
     }
 
     @Override
+    public String getValue() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if (obj == this) {
             return true;

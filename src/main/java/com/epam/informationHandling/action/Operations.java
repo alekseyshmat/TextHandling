@@ -1,11 +1,7 @@
 package com.epam.informationHandling.action;
 
 import com.epam.informationHandling.composite.Component;
-import com.epam.informationHandling.composite.Composite;
-import com.epam.informationHandling.composite.Lexeme;
-import com.epam.informationHandling.composite.Value;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
@@ -52,10 +48,8 @@ public class Operations {
                     value = 1;
                 }
             }
-
             return value;
         });
-
         return text;
     }
 }
